@@ -21,6 +21,7 @@
     "express": "^4.16.3"
   },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "start": "node ."
   }
 }
