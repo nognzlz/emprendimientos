@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="eco-container">
+                <form ng-submit="$ctrl.muestraColaborador()" ng-if="!$ctrl.mostrarColaborador">
+                    <div class="form-group">
+                        <label for="nombreYapellido">Ingrese DNI</label>
+                        <input type="text" class="form-control" id="nombreYapellido" ng-model="$ctrl.nombre">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="eco-btn">Listo</button>
+                </form>
+                <div class="eco-container" ng-if="$ctrl.mostrarColaborador">
+                    <label for="nombreYapellido">Nombre: Ramiro Morales</label>
+                    <label for="nombreYapellido">DNI: 33212453</label>
+                    <label for="nombreYapellido">Rol: Alumno</label>
+                    <label for="nombreYapellido">Cantidad Entregada: 930gr</label>
+                    <button class="btn btn-primary" id="eco-btn" ng-click="$ctrl.volver()">Volver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
