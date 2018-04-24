@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eco Supplies</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/styles.css">
+
+    <base href="/">
+
+</head>
+<body ng-app="app">
+
+
+<nav class="navbar navbar-expand-lg navbar-light" id="eco-header">
+    <a class="navbar-brand text-white" href="#">ECO SUPPLIES</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="seleccion">Seleccionar Colaborador<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="listado">Listado de colaboradores</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div ng-view></div>
+
+<script src="http://localhost:8080/angular/angular.js"></script>
+<script src="http://localhost:8080/angular-route/angular-route.js"></script>
+<script src="http://localhost:8080/app-module.js"></script>
+<script src="http://localhost:8080/seleccion/colaboradores-controller.js"></script>
+<script src="http://localhost:8080/listado/listado-controller.js"></script>
+
+
+
+</body>
+</html>
