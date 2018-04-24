@@ -2,10 +2,10 @@
     <div class="row">
         <div class="col-md-4 col-sm-6">
             <div class="eco-container">
-                <form>
+                <form ng-submit="$ctrl.cargarColaborador()" ng-if="!$ctrl.cargado">
                     <div class="form-group">
                         <label for="nombreYapellido">Nombre y Apellido</label>
-                        <input type="text" class="form-control" id="nombreYapellido">
+                        <input type="text" class="form-control" id="nombreYapellido" ng-model="$ctrl.nombre">
                     </div>
                     <div class="form-group">
                         <label for="dni">DNI</label>
@@ -16,11 +16,15 @@
                         <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingresar email">
                     </div>
                     <div class="form-group">
-                        <label for="email">Papel entregado</label>
-                        <input type="email" class="form-control" id="email" placeholder="Cantidad en Gramos">
+                        <label for="papel">Papel entregado</label>
+                        <input type="text" class="form-control" id="papel" placeholder="Cantidad en Gramos" ng-model="$ctrl.cantidad">
                     </div>
                     <button type="submit" class="btn btn-primary" id="eco-btn">Listo</button>
                 </form>
+                <div class="eco-container" ng-if="$ctrl.cargado">
+                    <h4>Wohoo! {{$ctrl.nombre}} ha entregado {{$ctrl.cantidad}}kg de papel!!!</h4>
+                    <button class="btn btn-primary" id="eco-btn" ng-click="$ctrl.volver()">Volver</button>
+                </div>
             </div>
         </div>
     </div>
