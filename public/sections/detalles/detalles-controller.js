@@ -13,15 +13,15 @@
         vm.volver = volver;
 
         function initialize() {
-            vm.cargado = false;
+            vm.mostrado = false;
         }
 
         function volver() {
-            vm.cargado = false;
+            vm.mostrado = false;
         }
 
         function muestraColaborador() {
-            vm.cargado = true;
+            vm.mostrado = true;
         }
 
         return vm;
