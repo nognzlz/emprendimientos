@@ -1,0 +1,15 @@
+{
+  "name": "emprendimientos",
+  "version": "0.0.1",
+  "main": "index.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.6.10",
+    "angular-route": "^1.6.10"
+  },
+  "overrides": {}
+}
