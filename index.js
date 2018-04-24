@@ -1,14 +1,8 @@
-var express = require('express');
-var app = express();
-var path = require('path');
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
 
-// viewed at http://localhost:8080
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/www/index.html'));
-});
-
-app.use(express.static(__dirname + '/www/styles'));
-app.use(express.static(__dirname + '/www/sections'));
-app.use(express.static(__dirname + '/www/bower_components'));
-
-app.listen(8080);
+express()
+  .use(express.static('public'))
+  .get('/', (req, res) => res.render('index.html'))
+.listen(PORT, () => console.log(`Listening on ${ PORT }`))
