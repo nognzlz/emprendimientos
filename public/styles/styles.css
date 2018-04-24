@@ -1,3 +1,13 @@
 #eco-header {
     background-color: #7bb551;
 }
+
+.eco-container {
+    padding: 20px;
+}
+
+#eco-btn {
+    background-color: #7bb551;
+    border-color: #7bb551;
+    color: #FFF;
+}
