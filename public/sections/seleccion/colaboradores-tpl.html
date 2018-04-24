@@ -22,7 +22,9 @@
                     <button type="submit" class="btn btn-primary" id="eco-btn">Listo</button>
                 </form>
                 <div class="eco-container" ng-if="$ctrl.cargado">
-                    <h4>Wohoo! {{$ctrl.nombre}} ha entregado {{$ctrl.cantidad}}kg de papel!!!</h4>
+                    <h4>Wohoo! {{$ctrl.nombre}} ha entregado {{$ctrl.cantidad}} gramos de papel!!!</h4>
+                    <h4>El total acumulado para este colaborador es: 5.200gr</h4>
+                    <h4>El colaborador se ha hecho acreedor del siguiente premio: CUADERNO</h4>
                     <button class="btn btn-primary" id="eco-btn" ng-click="$ctrl.volver()">Volver</button>
                 </div>
             </div>
