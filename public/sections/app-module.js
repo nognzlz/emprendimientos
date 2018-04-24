@@ -13,7 +13,8 @@
               templateUrl: 'sections/listado/listado-tpl.html',
               controller: 'ListadoController',
               controllerAs: '$ctrl'
-           });
+           })
+           .otherwise({redirectTo:'/seleccion'});
 
         $locationProvider.html5Mode(
             {
