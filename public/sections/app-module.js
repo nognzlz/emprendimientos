@@ -14,6 +14,11 @@
               controller: 'ListadoController',
               controllerAs: '$ctrl'
            })
+            .when('/detalles', {
+              templateUrl: 'sections/detalles/detalles-tpl.html',
+              controller: 'DetallesController',
+              controllerAs: '$ctrl'
+           })
            .otherwise({redirectTo:'/seleccion'});
 
         $locationProvider.html5Mode(
